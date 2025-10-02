@@ -45,6 +45,7 @@ export default function AddNotaScreen() {
         onChangeText={setContenido}
         multiline
       />
+      <View style={{ flex: 1 }} />
       <Button title="Guardar" onPress={handleAdd} />
     </View>
   );
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#edededff", padding: 20 },
   input: {
     borderWidth: 1,
+    backgroundColor: "#ffffffff",
     borderColor: "#ccc",
     borderRadius: 8,
     padding: 10,
